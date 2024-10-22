@@ -1,0 +1,16 @@
+package oops.p1.p2;
+
+abstract public class Shapes {
+	abstract double CalculateArea();
+
+}
+
+class Circle extends Shapes {
+
+	private double radius;
+
+	public Circle(double radius) {
+
+	}
+
+}

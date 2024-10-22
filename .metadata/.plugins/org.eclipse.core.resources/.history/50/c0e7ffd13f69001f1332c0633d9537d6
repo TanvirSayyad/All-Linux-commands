@@ -1,0 +1,10 @@
+package polymorphism.p1;
+
+public class Student extends Main {
+
+	public void read() {
+		System.out.println("read xyz book");
+		Student s1 = new Student();
+
+	}
+}

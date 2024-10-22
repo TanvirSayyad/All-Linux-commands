@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/tsayyad/Downloads/spring-aop-6.1.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tsayyad/Downloads/commons-lang3-3.13.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tsayyad/Downloads/spring-context-6.1.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tsayyad/Downloads/spring-core-6.1.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tsayyad/Downloads/spring-beans-6.1.13.jar"/>
+	<classpathentry kind="var" path="JRE_LIB"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

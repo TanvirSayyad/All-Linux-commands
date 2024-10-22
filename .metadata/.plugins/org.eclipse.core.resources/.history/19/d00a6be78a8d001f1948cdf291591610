@@ -1,0 +1,11 @@
+package p1;
+
+public class Countnumber {
+
+	public static void main(String[] args) {
+		int num = 5;
+//		5*4*3*2*1
+
+	}
+
+}

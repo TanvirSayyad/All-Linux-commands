@@ -1,0 +1,26 @@
+package missingNumber;
+
+public class MissNumberIndex {
+    public static void main(String[] args) {
+        int a[] = { 2, 4, 8, 10 };
+        int sum = 0;
+        int sum2 = 0;
+
+        // Sum of actual array elements
+        for (int i = 0; i < a.length; i++) {
+            sum = sum + a[i];
+        }
+        System.out.println("Sum of array elements: " + sum);
+
+        int last = a[a.length - 1];  // Last element of the array
+
+        // Sum of expected elements (from first to last element)
+        for (int i = a[0]; i <= last; i++) {
+            sum2 = sum2 + i;
+        }
+        System.out.println("Sum of expected range: " + sum2);
+
+        // Difference gives the missing number(s)
+        System.out.println("Missing number(s) sum: " + (sum2 - sum));
+    }
+}

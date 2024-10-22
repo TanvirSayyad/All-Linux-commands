@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Define the Dog bean first -->
+    <bean class="s1.constructor.xmls.Dog" id="Dogy">
+        <constructor-arg value="wild"></constructor-arg>
+        <constructor-arg value="90"></constructor-arg>
+        <constructor-arg value="cat"></constructor-arg>
+    </bean>
+
+    <!-- Inject the Dog bean into the Animal bean -->
+    <bean class="s1.constructor.xmls.Animal" id="Anim">
+        <constructor-arg value="Tiger"></constructor-arg>
+        <constructor-arg value="23"></constructor-arg>
+        <constructor-arg ref="Dogy"></constructor-arg>
+    </bean>
+
+</beans>

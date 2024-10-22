@@ -1,0 +1,20 @@
+package uncheckedExce;
+
+public class TryCatchBl {
+	public static void main(String[] args) {
+		int a[] = new int[5];
+		
+		System.out.println("execute line by line");
+//		System.out.println(a[6]); //getting exception ArrayIndexOutOfBound
+try {
+	System.out.println(a[7]);
+	
+} catch (ArrayIndexOutOfBoundsException e) {
+	
+	System.out.println("try to access out of bound element");
+	// TODO: handle exception
+}
+		
+System.out.println("terminate at the end");
+	}
+}

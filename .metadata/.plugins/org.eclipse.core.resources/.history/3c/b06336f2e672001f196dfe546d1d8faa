@@ -1,0 +1,27 @@
+package uncheckedExce;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class ThrowThrowsExcep {
+
+	public static void m1() throws FileNotFoundException {
+		FileReader filereader = new FileReader("a.text");
+
+	}
+
+	public static void m2() throws FileNotFoundException {
+		m1();
+	}
+
+
+	public static void main(String[] args) throws IOException {
+
+		m2();
+		System.out.println("hl Tamvir");
+
+}
+
+
+}

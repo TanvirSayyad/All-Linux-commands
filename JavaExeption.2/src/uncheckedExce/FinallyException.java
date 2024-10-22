@@ -1,0 +1,22 @@
+package uncheckedExce;
+
+public class FinallyException {
+
+	public static void main(String[] args) {
+		int a[] = new int[5];
+		System.out.println("hello Tanvir");
+
+		try {
+			System.out.println(a[10]);
+
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("handled");
+		} finally {
+			System.out.println("always run");
+			// always run eighter Exception come or not
+		}
+		System.out.println("terminate");
+	}
+
+}

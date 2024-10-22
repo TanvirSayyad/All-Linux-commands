@@ -1,0 +1,22 @@
+package uncheckedExce;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.Scanner;
+
+public class ThrowThrowsExcep {
+	
+	public static void m1() throws FileNotFoundException {
+		FileReader filereader=new FileReader("a.text");
+		
+		
+	}
+	
+
+public static void main(String[] args) {
+	
+}
+
+
+}

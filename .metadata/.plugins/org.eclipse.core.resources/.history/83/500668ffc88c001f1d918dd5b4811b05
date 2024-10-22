@@ -1,0 +1,33 @@
+package p1.max;
+
+public class SecondMax {
+	public static void main(String[] args) {
+		int[] a = { 1, 2, 3, 4, 5, 6, 7 };
+		int temp;
+		
+for (int i = 0; i < a.length - 1; i++) {
+
+			for (int j = i + 1; j < a.length; j++) {
+				if (a[i] < a[j]) {
+
+					temp = a[j];
+					a[j] = a[i];
+					a[i] = temp;
+					}
+				}
+		}
+int secondmaxindex = -1;
+		int secondmax = a[1];
+		for (int i = 0; i < a.length; i++) {
+			if (secondmax == a[i]) {
+				secondmaxindex = i;
+
+			}
+
+		}
+
+		System.out.println("second max is 6====" + a[1]);
+		System.out.println("index is==" + secondmaxindex);
+	}
+
+}

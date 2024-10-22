@@ -1,0 +1,34 @@
+package duplicateArray;
+
+public class DuplicateString {
+
+    public static void main(String[] args) {
+        
+        // Step 1: Initialize the string that we want to check for duplicate characters
+        String str = "Tanviri";
+        
+        // Step 2: Convert the string to a character array for easier comparison
+        char[] a = str.toCharArray();  // Now, 'a' contains the characters {'T', 'a', 'n', 'v', 'i', 'r', 'i'}
+
+        // Step 3: Outer loop to pick each character one by one
+        for (int i = 0; i < a.length; i++) {
+            
+            // Step 4: Inner loop to compare the selected character with the rest of the characters
+            for (int j = i + 1; j < a.length; j++) {
+                
+                // Step 5: Check if the character at index i is the same as the character at index j
+                if (a[i] == a[j]) {
+                    
+                    // Step 6: If a duplicate is found, print the duplicate character
+                    System.out.println("Duplicate character: " + a[i]);
+                    
+                    // Step 7: Print the index of the first occurrence (i) of the duplicate character
+                    System.out.println("This is index of the first occurrence: " + i); 
+                    
+                    // Step 8: Print the index of the second occurrence (j) of the duplicate character
+                    System.out.println("This is index of the second occurrence: " + j);
+                }
+            }
+        }
+    }
+}

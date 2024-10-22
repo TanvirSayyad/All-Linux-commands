@@ -1,0 +1,13 @@
+package polymorphism.p1;
+
+//compile time poly
+public class Student extends Main {
+
+	public void read() {
+		System.out.println("read xyz book");
+		Student s1 = new Student();
+
+		s1.read();
+
+	}
+}

@@ -1,0 +1,21 @@
+package queueInterface;
+
+import java.util.ArrayDeque;
+
+public class ADeque {
+
+	public static void main(String[] args) {
+
+		ArrayDeque<Integer> dq = new ArrayDeque<Integer>();
+		dq.offer(10);
+		dq.offer(20);
+		dq.addFirst(1);
+		dq.addLast(2);
+
+		System.out.println(dp);
+
+		// TODO Auto-generated method stub
+
+	}
+
+}
