@@ -1,0 +1,31 @@
+package sumarray;
+
+public class OddEvenArray {
+	public static void main(String[] args) {
+		int a[] = { 7, 2, 9, 4, 5, 8 };
+		int evenCount = 0;
+		int oddcount = 0;
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] % 2 == 0) {
+				System.out.println("Even =" + a[i] + "");
+				evenCount++;
+
+			} else if (!(a[i] % 2 == 0)) {
+
+				System.out.println("odd =" + a[i]);
+				oddcount++;
+
+			} // odd 7
+				// Even2
+				// odd 9
+				// Even4
+				// odd 5
+				// Even8
+		}
+		System.out.println(evenCount);
+		System.out.println(oddcount);
+
+	}
+
+
+}
